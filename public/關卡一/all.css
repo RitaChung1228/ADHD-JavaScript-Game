@@ -1,0 +1,105 @@
+/* 所有的html都套用這個css，但真的會用到這個css的只有2intro.html和5end.html */
+
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    min-height: 100vh;
+    background: #ffffff;
+    font-family: "Noto Sans TC", "Segoe UI", "Microsoft JhengHei", sans-serif;
+    color: #1f2937;
+}
+
+.stage {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 1400px;
+    height: 700px;
+    background-size: cover;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    /* display: none; */
+    justify-content: center;
+    align-items: center;
+}
+
+.stage::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(15, 23, 42, 0.25);
+}
+
+.card {
+    position: relative;
+    width: 900px;
+    padding: 60px 70px 72px;
+    background: rgba(255, 255, 255, 0.8);
+    border-radius: 40px;
+    box-shadow: 0 30px 70px rgba(17, 24, 39, 0.35);
+    text-align: center;
+    backdrop-filter: blur(6px);
+   
+    z-index: 1;
+}
+
+.eyebrow {
+    margin: 0 0 16px;
+    font-size: 15px;
+    letter-spacing: 0.3em;
+    text-transform: uppercase;
+    color: #000000;
+    
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+}
+
+h1 {
+    margin: 0 0 28px;
+    font-size: 44px;
+    color: #111827;
+}
+
+p {
+    margin: 0 0 18px;
+    font-size: 20px;
+    line-height: 1.8;
+}
+
+.note {
+    color: #000000;
+    font-size: 18px;
+    margin-top: 16px;
+}
+
+button {
+    margin-top: 32px;
+    padding: 16px 72px;
+    border: none;
+    border-radius: 999px;
+    font-size: 22px;
+    font-weight: 600;
+    color: #fff;
+    background-image: linear-gradient(120deg, #f5d547 0%, #76d496 50%, #34b7d8 100%);
+    box-shadow: 0 18px 35px rgba(52, 183, 216, 0.35);
+    cursor: pointer;
+    transition: transform 150ms ease, box-shadow 150ms ease;
+}
+
+button:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 24px 40px rgba(52, 183, 216, 0.45);
+}
+
+button:active {
+    transform: translateY(-1px);
+    box-shadow: 0 14px 28px rgba(52, 183, 216, 0.4);
+}
+
+
+
+
