@@ -14,12 +14,6 @@ const scriptData = [
     speaker: "我",
     boxText: "(咕嚕咕嚕)\n哈，果然早起一杯水最美味。",
     background: 0
-  },
-  {
-    centerText: "",
-    speaker: "我",
-    boxText: "還有好多事情要做......\n剛剛好像要幹嘛？算了，不重要。",
-    background: 1
   }
 ];
 
