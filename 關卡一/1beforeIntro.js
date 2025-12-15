@@ -214,7 +214,7 @@ class StoryPlayer {
       this.charIndex = 0;
     } else if (this.index === this.script.length - 1) {
       // 到劇本最後一幕，重新載入頁面
-      window.location.href = "2Intro.html";
+      window.location.href = "2intro.html";
     }
   }
 }
